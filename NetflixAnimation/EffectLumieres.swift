@@ -21,7 +21,7 @@ struct EffectLumieres  : View{
     
     @State var showingLumieres = 0.0
     var body: some View{
-        VStack{
+        ZStack{
             
             ForEach(0..<lampList.count, id: \.self) { index in
                 let lamp = lampList[index]
@@ -31,7 +31,7 @@ struct EffectLumieres  : View{
             
         }
         .offset(x: offsetX, y: offsetY)
-        .frame(width: propWidth, height: UIScreen.screenHeight,alignment: Alignment.center)
+        .frame(width: propWidth, height: height,alignment: Alignment.center)
         .opacity(showingLumieres)
         .onAppear {
             withAnimation(Animation.linear(duration: 2.5).delay(1.6))
@@ -65,53 +65,50 @@ struct Lamp:  View{
         }
         .frame(width: CGFloat(lamp.width), height: UIScreen.screenHeight)
         .background(lamp.color)
-        .offset(x: lumiereMovingTranslate, y: lumiereMovingTranslate)
+        .offset(x: CGFloat(offsetX + lumiereMovingTranslate), y: lumiereMovingTranslate)
         .scaleEffect(lumiereMovingScale)
-        .zIndex(Double(lamp.z))
         .onAppear {
             if index % 2 == 0 {
-                withAnimation(Animation.linear(duration: 5).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate =  0.0
                 }
-                withAnimation(Animation.linear(duration: 5).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = 10.0
                 }
-                withAnimation(Animation.linear(duration: 5).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = 60.0
                 }
-                withAnimation(Animation.linear(duration: 5).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = 120.0
                 }
             }else{
-                withAnimation(Animation.linear(duration: 5).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate =  0.0
                 }
-                withAnimation(Animation.linear(duration: 5).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = -10.0
                 }
-                withAnimation(Animation.linear(duration: 5).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = -60.0
                 }
-                withAnimation(Animation.linear(duration: 5).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = -120.0
                 }
             }
             
-            
-            
-            withAnimation(Animation.linear(duration: 5).delay(lamp.animDelay))
+            withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
             {
                 self.lumiereMovingScale =  1.0
             }
-            withAnimation(Animation.linear(duration: 5).delay(lamp.animDelay))
+            withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
             {
                 self.lumiereMovingScale = 3
             }
