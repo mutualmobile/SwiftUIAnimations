@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		891F172C27EB880E00564C15 /* BrushList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F172B27EB880E00564C15 /* BrushList.swift */; };
 		8997BE8C27EB5FDA00CAAC6D /* NetflixAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997BE8B27EB5FDA00CAAC6D /* NetflixAnimationApp.swift */; };
 		8997BE8E27EB5FDA00CAAC6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997BE8D27EB5FDA00CAAC6D /* ContentView.swift */; };
 		8997BE9027EB5FDB00CAAC6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8997BE8F27EB5FDB00CAAC6D /* Assets.xcassets */; };
 		8997BE9327EB5FDB00CAAC6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8997BE9227EB5FDB00CAAC6D /* Preview Assets.xcassets */; };
+		8997BE9A27EB60DB00CAAC6D /* NetFlixIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997BE9927EB60DB00CAAC6D /* NetFlixIntro.swift */; };
+		8997BE9C27EB650E00CAAC6D /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997BE9B27EB650E00CAAC6D /* ColorExtensions.swift */; };
+		8997BEA227EB684700CAAC6D /* EffectBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997BEA127EB684700CAAC6D /* EffectBrush.swift */; };
+		8997BEA427EB686800CAAC6D /* EffectLumieres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8997BEA327EB686800CAAC6D /* EffectLumieres.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		891F172B27EB880E00564C15 /* BrushList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushList.swift; sourceTree = "<group>"; };
 		8997BE8827EB5FDA00CAAC6D /* NetflixAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetflixAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8997BE8B27EB5FDA00CAAC6D /* NetflixAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixAnimationApp.swift; sourceTree = "<group>"; };
 		8997BE8D27EB5FDA00CAAC6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8997BE8F27EB5FDB00CAAC6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8997BE9227EB5FDB00CAAC6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8997BE9927EB60DB00CAAC6D /* NetFlixIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetFlixIntro.swift; sourceTree = "<group>"; };
+		8997BE9B27EB650E00CAAC6D /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		8997BEA127EB684700CAAC6D /* EffectBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectBrush.swift; sourceTree = "<group>"; };
+		8997BEA327EB686800CAAC6D /* EffectLumieres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectLumieres.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,15 @@
 		8997BE8A27EB5FDA00CAAC6D /* NetflixAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				8997BEA327EB686800CAAC6D /* EffectLumieres.swift */,
+				8997BEA127EB684700CAAC6D /* EffectBrush.swift */,
+				891F172B27EB880E00564C15 /* BrushList.swift */,
 				8997BE8B27EB5FDA00CAAC6D /* NetflixAnimationApp.swift */,
 				8997BE8D27EB5FDA00CAAC6D /* ContentView.swift */,
 				8997BE8F27EB5FDB00CAAC6D /* Assets.xcassets */,
 				8997BE9127EB5FDB00CAAC6D /* Preview Content */,
+				8997BE9927EB60DB00CAAC6D /* NetFlixIntro.swift */,
+				8997BE9B27EB650E00CAAC6D /* ColorExtensions.swift */,
 			);
 			path = NetflixAnimation;
 			sourceTree = "<group>";
@@ -138,7 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8997BE8E27EB5FDA00CAAC6D /* ContentView.swift in Sources */,
+				8997BEA427EB686800CAAC6D /* EffectLumieres.swift in Sources */,
 				8997BE8C27EB5FDA00CAAC6D /* NetflixAnimationApp.swift in Sources */,
+				8997BE9C27EB650E00CAAC6D /* ColorExtensions.swift in Sources */,
+				891F172C27EB880E00564C15 /* BrushList.swift in Sources */,
+				8997BEA227EB684700CAAC6D /* EffectBrush.swift in Sources */,
+				8997BE9A27EB60DB00CAAC6D /* NetFlixIntro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +295,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +325,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

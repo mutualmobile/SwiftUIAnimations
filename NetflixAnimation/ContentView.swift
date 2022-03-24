@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: HorizontalAlignment.center, spacing: 0, content: {
+            NetFlixIntro()
+        }).frame(width: UIScreen.screenWidth, height: UIScreen.screenHeight).background(Color.black)
     }
 }
 
