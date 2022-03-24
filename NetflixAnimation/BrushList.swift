@@ -321,3 +321,19 @@ var brushList = [BrushFurModel(leftt:0,
                  )
                  
 ]
+
+
+struct BrushFurModel : Hashable{
+    static func == (lhs: BrushFurModel, rhs: BrushFurModel) -> Bool {
+        lhs.leftt == rhs.leftt
+    }
+    
+    var leftt:Float
+    var width:Float
+    var background:LinearGradient
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(leftt)
+        hasher.combine(width)
+    }
+}

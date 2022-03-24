@@ -35,7 +35,7 @@ struct NetFlixIntro : View {
             
             EffectBrush(offsetX: offsetX,propWidth: propWidth,offsetY: 0,rotation: 180,duration: 3.5,delay: 1.2,isFading : true,height : nHeight)
             
-            //EffectLumieres(offsetX: offsetX,propWidth: propWidth)
+            EffectLumieres(offsetX: offsetX,propWidth: propWidth,offsetY: 0,height: nHeight)
             
             EffectBrush(offsetX: offsetX3,propWidth: propWidth3,offsetY:offsetY3,rotation:-19.5,duration: 2.5,delay: 0.8,isFading : false,height : nHeight * 1.2 )
             EffectBrush(offsetX: offsetX2,propWidth: propWidth2,offsetY: 0,rotation: 180,duration: 2.5,delay: 0.5,isFading : false,height : nHeight)

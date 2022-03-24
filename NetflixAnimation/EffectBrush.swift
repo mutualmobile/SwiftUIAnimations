@@ -30,12 +30,12 @@ struct EffectBrush : View{
                 Brush(brush:brush,offsetX:offsetX,propWidth:propWidth,brushTranslationY:0,height:height)
             }
             
-        }
-        .if(isFading, transform: { view in
+        }.if(isFading, transform: { view in
             view.background(fadingLumieres)
         })
             .offset(x: offsetX, y: offsetY+CGFloat(brushTranslationY)  )
             .frame(width: propWidth, height: CGFloat(height),alignment: Alignment.center)
+        
             .rotationEffect(Angle(degrees: rotation), anchor:.center)
             .onAppear {
             
@@ -94,20 +94,6 @@ struct Brush : View{
 
 
 
-struct BrushFurModel : Hashable{
-    static func == (lhs: BrushFurModel, rhs: BrushFurModel) -> Bool {
-        lhs.leftt == rhs.leftt
-    }
-    
-    var leftt:Float
-    var width:Float
-    var background:LinearGradient
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(leftt)
-        hasher.combine(width)
-    }
-}
 
 
 extension UIScreen{
