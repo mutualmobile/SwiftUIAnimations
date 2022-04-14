@@ -69,46 +69,46 @@ struct Lamp:  View{
         .scaleEffect(lumiereMovingScale)
         .onAppear {
             if index % 2 == 0 {
-                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 2).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate =  0.0
                 }
-                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration:2).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = 10.0
                 }
-                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 2).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = 60.0
                 }
-                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 2).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = 120.0
                 }
             }else{
-                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 2).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate =  0.0
                 }
-                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 2).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = -10.0
                 }
-                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 2).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = -60.0
                 }
-                withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
+                withAnimation(Animation.linear(duration: 2).delay(lamp.animDelay))
                 {
                     self.lumiereMovingTranslate = -120.0
                 }
             }
             
-            withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
+            withAnimation(Animation.linear(duration: 2).delay(lamp.animDelay))
             {
                 self.lumiereMovingScale =  1.0
             }
-            withAnimation(Animation.linear(duration: 10).delay(lamp.animDelay))
+            withAnimation(Animation.linear(duration: 2).delay(lamp.animDelay))
             {
                 self.lumiereMovingScale = 3
             }
