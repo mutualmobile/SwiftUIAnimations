@@ -41,7 +41,7 @@ struct NetFlixIntro : View {
             EffectBrush(offsetX: offsetX2,propWidth: propWidth2,offsetY: 0,rotation: 180,duration: 2.5,delay: 0.5,isFading : false,height : nHeight)
             
         }
-        .frame(width:nWidth, height: nHeight).border(Color.red)
+        .frame(width:nWidth, height: nHeight)
         .scaleEffect(x:zoomInNetflixBox,y:zoomInNetflixBox, anchor:.center)
         .onAppear {
             
